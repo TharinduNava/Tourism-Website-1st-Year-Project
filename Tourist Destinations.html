@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images\sl.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+	<title>Tourist Destinations</title>
+	<style>
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background-image: url(backgr2.jpg);
+			background-attachment: fixed;
+		}
+
+		img {
+			border-radius: 15px;
+			transition: transform .2s;
+		}
+
+		img:hover {
+			transform: scale(1.5);
+		}
+
+		.tourist {
+			color: lightblue;
+			font-size: 30px;
+			letter-spacing: 8px;
+			margin-bottom: 10px;
+			font-family: 'Kaushan Script', cursive;
+			text-align: center;
+		}
+
+		h4 {
+			font-size: 25px;
+			color: rgb(111, 206, 154);
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
+
+		h3 {
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			color: cornflowerblue;
+			font-size: 40px;
+		}
+
+		h2 {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: none;
+			font-size: 25px;
+		}
+
+		li{
+			display: inline-block;
+			float: right;
+			background-color: lightseagreen;
+		}
+
+		li a{
+			display: block;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			color: rgb(0, 0, 0);
+		}
+
+		li:hover{
+			background-color: skyblue;
+		}
+
+		li a:hover {
+			color: rgb(4, 0, 255);
+		}
+
+		.div1 {
+			background-color: none;
+			padding-left: 70px;
+			font-size: 20px;
+			color: #f2f2f2;
+		}
+
+		.tab {
+			border-radius: 15px;
+			width: 1150px;
+			border-spacing: 15px;
+			margin: 10px;
+			background-color: rgb(11, 23, 78);
+			align-content: center;
+		}
+
+		.tabhead {
+			color: black;
+			background: rgb(141, 179, 182);
+			font-weight: bold;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			border-radius: 15px;
+		}
+
+		.tabdata {
+			color: rgb(0, 0, 0);
+			background: rgb(166, 230, 235);
+			font-weight: bold;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			border-radius: 15px;
+			text-align: center;
+		}
+
+		dl {
+			color: rgb(112, 248, 248);
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+
+		dt {
+			color: rgb(162, 186, 187);
+			font-family: monospace;
+		}
+
+		.dis {
+			border: 1;
+			border-style: dotted;
+			border-spacing: 40px;
+			border-width: 5px;
+			width: 50%;
+			border-radius: 40%;
+			text-align: center;
+			padding-left: none;
+		}
+
+		.pro {
+			border: 1;
+			border-radius: 40%;
+			text-align: center;
+			border-style: dotted;
+			border-spacing: 40px;
+			border-width: 5px;
+			width: 93%;
+		}
+
+		td {
+			color: lightsteelblue;
+		}
+
+		.tbb {
+			border: 1;
+			border-radius: 10%;
+			border-style: solid;
+			border-width: 5px;
+			width: 93%;
+			border-spacing: 40px;
+		}
+
+		.list a {
+			color: rgb(43, 220, 226);
+		}
+
+		.list a:visited {
+			color: aqua;
+		}
+
+		.tab a:visited {
+			color: maroon;
+		}
+
+		.des {
+			font-size: 25px;
+		}
+
+		.back-to-top {
+			position: fixed;
+			right: 1rem;
+			bottom: 1rem;
+			border-radius: 15px;
+			width: 4%;
+			height: 6%;
+			background-color: rgb(0, 166, 235);
+		}
+
+		.back-to-top:hover {
+			background-color: turquoise;
+			color: blue;
+			cursor: pointer;
+		}
+
+		.hidden {
+  			display: none;
+		}
+
+		.top {
+			transform: rotate(-90deg);
+			font-size: x-large;
+		}
+
+	</style>
+</head>
+
+<body>
+	
+	<a href="#tourist">
+		<button class="back-to-top">
+			<div class="top" title="Go To The Top">▶</div>
+		</button>
+	</a>
+	 
+	<ul>
+		<li>
+			<a href="Home.html">Home</a>
+		</li>
+		<li>
+			<a href="Tourist Destinations.html">Tourist Destinations</a>
+		</li>
+		<li>
+			<a href=" To-Do List.html">To-Do List</a>
+		</li>
+		<li>
+			<a href="About.html">About</a>
+		</li>
+		<li>
+			<a href="Contact.html">Contact</a>
+		</li>
+	</ul>
+
+
+	<div class="tourist"  id="tourist">
+		<h1>Tourist Destinations</h1>
+	</div>
+
+
+	<div class="div1">
+
+	
+	<table class="tab" border="1" cellpadding="15">
+		<h3 class="des">The Most Famous Places in Sri Lanka That You Can Visit -
+			<br>(Listed According to the Provinces & Districts)</h3>
+		<h2>Just click on a District to view the Places 👉</h2>
+		<tr>
+			<th class="tabhead">Central Province</th>
+			<td class="tabdata" colspan="60"><a href="#kandy">Kandy District</a></td>
+			<td class="tabdata" colspan="60"><a href="#matale">Matale District</a></td>
+			<td class="tabdata" colspan="60"><a href="#nuwaraeliya">Nuwara Eliya District</a></td>
+		</tr>
+		<tr>
+			<th class="tabhead">Eastern Province</th>
+			<td class="tabdata" colspan="60"><a href="#ampara">Ampara District</a></td>
+			<td class="tabdata" colspan="60"><a href="#batti">Batticaloa District</a></td>
+			<td class="tabdata" colspan="60"><a href="#trinco">Trincomalee District</a></td>
+		</tr>
+		<tr>
+			<th class="tabhead">Northern Province</th>
+			<td class="tabdata" colspan="36"><a href="#jaffna">Jaffna District</td></a>
+			<td class="tabdata" colspan="36"><a href="#kili">Kilinochchi District</td></a>
+			<td class="tabdata" colspan="36"><a href="#mannar">Mannar District</td></a>
+			<td class="tabdata" colspan="36"><a href="#mulla">Mullaitivu District</td></a>
+			<td class="tabdata" colspan="36"><a href="#vavu">Vavuniya District</td></a>
+		</tr>
+		<tr>
+			<th class="tabhead">Southern  Province</th>
+			<td class="tabdata" colspan="60"><a href="#galle">Galle District</td></a>
+			<td class="tabdata" colspan="60"><a href="#hamban">Hambantota District</td></a>
+			<td class="tabdata" colspan="60"><a href="#matara">Matara District</td></a>
+		</tr>
+		<tr>
+			<th class="tabhead">Western  Province</th>
+			<td class="tabdata" colspan="60"><a href="#colombo">Colombo District</td></a>
+			<td class="tabdata" colspan="60"><a href="#gampaha">Gampaha District</td></a>
+			<td class="tabdata" colspan="60"><a href="#kalutara">Kalutara District</td></a>
+		</tr>
+		<tr>
+			<th class="tabhead">North Western Province</th>
+			<td class="tabdata" colspan="90"><a href="#kuru">Kurunegala District</td></a>
+			<td class="tabdata" colspan="90"><a href="#putta">Puttalam District</td></a>
+		</tr>
+		<tr>
+			<th class="tabhead">North Central Province</th>
+			<td class="tabdata" colspan="90"><a href="#anura">Anuradhapura District</td></a>
+			<td class="tabdata" colspan="90"><a href="#polon">Polonnaruwa District</td></a>
+		</tr>
+		<tr>
+			<th class="tabhead">Uva Province</th>
+			<td class="tabdata" colspan="90"><a href="#badulla">Badulla District</td></a>
+			<td class="tabdata" colspan="90"><a href="#monara">Monaragala District </td></a>
+		</tr>
+		<tr>
+			<th class="tabhead">Sabaragamuwa Province</th>
+			<td class="tabdata" colspan="90"><a href="#kegalle">Kegalle District</td></a>
+			<td class="tabdata" colspan="90"><a href="#ratna">Ratnapura District</td></a>
+		</tr>
+
+	</table>
+	<br><br><br>
+
+	<dl class="list">
+		<h2 class="pro">Central Province</h2>
+		<br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="kandy">Kandy District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Temple of the Sacred Tooth Relic</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Temple of the Sacred Tooth Relic or Sri Dalada Maligawa ; commonly known as the ශ්‍රී දළදා මාළිගාව (Glorious Tooth Temple) (Note - The word ‘Temple’ is an incorrect translation of the word Maligawa. The English word for ‘Maligawa’ is  ‘Palace’.), is a Buddhist temple in Kandy, Sri Lanka. It is located in the royal palace complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha. Since ancient times, the relic has played an important role in local politics because it is believed that whoever holds the relic holds the governance of the country. The relic was historically held by Sinhalese kings. The temple of the tooth is a World Heritage Site mainly due to the temple and the relic.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\temple-of-the-sacred-tooth-relic-kandy.jpg" alt="Temple of the Sacred Tooth Relic" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Temple_of_the_Tooth" target="_blank">https://en.wikipedia.org/wiki/Temple_of_the_Tooth</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.ceylonexpeditions.com/tooth-relic-temple-kandy-sri-lanka" target="_blank">https://www.ceylonexpeditions.com/tooth-relic-temple-kandy-sri-lanka/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Royal Botanical Gardens, Peradeniya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Royal Botanic Gardens, Peradeniya are about 5.5 km to the west of the city of Kandy in the Central Province of Sri Lanka. In 2016, the garden was visited by 1.2 million locals and 400,000 foreign visitors. It is near the Mahaweli River (The longest river in Sri Lanka). It is renowned for its collection of orchids. The garden includes more than 4000 species of plants, including orchids, spices, medicinal plants and palm trees. Attached to it is the "National Herbarium of Sri Lanka". The total area of the botanical garden is 147 acres (0.59 km2), at 460 meters above sea level, and with a 200-day annual rainfall. It is managed by the Division of National Botanic Gardens of the Department of Agriculture.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Peridenya-Gardens-kandy-sri-lanka1.jpg" alt="Royal Botanical Gardens, Peradeniya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Royal_Botanical_Gardens,_Peradeniya" target="_blank">https://en.wikipedia.org/wiki/Royal_Botanical_Gardens,_Peradeniya</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.andbeyond.com/experiences/asia/sri-lanka/kandy/peradeniya-botanical-gardens/" target="_blank">https://www.andbeyond.com/peradeniya-botanical-gardens/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="matale">Matale District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Sigiriya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Sigiriya or Sinhagiri (Lion Rock Sinhala: සීගිරිය, Tamil: சிகிரியா/சிங்ககிரி, pronounced see-gi-ri-yə) is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of rock around 180 metres (590 ft) high.
+						<br><br>
+						The capital and the royal palace were abandoned after the king's death. It was used as a Buddhist monastery until the 14th century. Sigiriya today is a UNESCO listed World Heritage Site. It is one of the best preserved examples of ancient urban planning.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Beauty_of_Sigiriya_by_Binuka.jpg" alt="Sigiriya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Sigiriya" target="_blank">https://en.wikipedia.org/wiki/Sigiriya</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Sigiriya" target="_blank">https://en.wikipedia.org/wiki/Sigiriya</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Pidurangala Vihara</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Pidurangala Vihara (Sinhala: පිදුරංගල විහාරය) is an ancient Buddhist temple situated in Pidurangala village of Matale District, Sri Lanka. The temple was constructed on a massive rock called Pidurangala, which is located a few kilometers north of the historical fort Sigiriya.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Pidurangala_Buddha_(1).jpg" alt="Pidurangala Vihara" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Pidurangala_Vihara" target="_blank">https://en.wikipedia.org/wiki/Pidurangala_Vihara</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Pidurangala_Vihara" target="_blank">https://en.wikipedia.org/wiki/Pidurangala_Vihara</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="nuwaraeliya">Nuwara Eliya District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Lake Gregory (Nuwara Eliya)</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Lake Gregory (Sinhala: ග්‍රෙගරි වැව Gregari Væva), sometimes also called Gregory Lake or Gregory Reservoir, is a reservoir in heart of the tea country hill city, Nuwara Eliya, Sri Lanka. Lake Gregory was constructed during the period of British Governor Sir William Gregory in 1873. The lake and the surrounding area make up the Gregory Lake Area.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\UG-LK_Photowalk_-_2018-03-25_-_Lake_Gregory_(1).jpg" alt="Lake Gregory (Nuwara Eliya)" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Lake_Gregory_(Nuwara_Eliya)" target="_blank">https://en.wikipedia.org/wiki/Lake_Gregory</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Lake_Gregory_(Nuwara_Eliya)" target="_blank">https://en.wikipedia.org/wiki/Lake_Gregory</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Victoria Park, Nuwara Eliya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Victoria Park is a public park located in Nuwara Eliya, next to the Nuwara Eliya Post Office in Sri Lanka.
+						<br><br>
+						Originally the park was the research field of Hakgala Botanical Garden. The park was formally named in 1897 to commemorate Queen Victoria's Diamond Jubilee. The park was established with the planting of its first tree, an Oak, by a visiting German Princess. The Nanu Oya River runs through the park, creating a number of small lakes. A number of rare bird species can be found in the park. At the far end of the park is a small children's playground and miniature ridable railway.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\800px-VictoriaPark.jpg" alt="Victoria Park, Nuwara Eliya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Victoria_Park,_Nuwara_Eliya" target="_blank">https://en.wikipedia.org/wiki/Victoria_Park,_Nuwara_Eliya</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Victoria_Park,_Nuwara_Eliya" target="_blank">https://en.wikipedia.org/wiki/Victoria_Park,_Nuwara_Eliya</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">Eastern Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="ampara">Ampara District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Oluvil Lighthouse</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Oluvil Lighthouse (Sinhala: ඔලුවිල් ප්‍රදීපාගාරය) is a lighthouse situated on the southern east coast of Sri Lanka at Oluvil, which is located approximately 12 km (7.5 mi) south of Kalmunai.
+						<br><br>
+						The lighthouse is operated and maintained by the Sri Lanka Ports Authority. It is the first lighthouse erected after the Sri Lankan independence, until the Hambantota Port and the Colombo Port expansion occurred in 2012–13. The 24 metres (79 ft) high white cylindrical concrete lighthouse tower was built in 1999 as a part of the development of Oluvil Harbour and it was constructed with lantern and gallery, attached to a one-story small equipment building.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Oluvil_Lighthouse_2.jpg" alt="Oluvil Lighthouse" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Oluvil_Lighthouse" target="_blank">https://en.wikipedia.org/wiki/Oluvil_Lighthouse</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Oluvil_Lighthouse" target="_blank">https://en.wikipedia.org/wiki/Oluvil_Lighthouse/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="batti">Batticaloa District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Batticaloa fort</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Batticaloa Fort (Tamil: மட்டக்களப்புக் கோட்டை, romanized: Maṭṭakkaḷappuk Kōṭṭai; Sinhala: මඩකලපුව බලකොටුව, romanized: Madakalapuwa Balakotuwa) was built by the Portuguese in 1628 and was captured by the Dutch on 18 May 1638. From 1795, the fort was used by the British.
+						<br><br>
+						The fort has a structure of four bastions and is protected by the Batticaloa Lagoon on two sides and a canal on the other two sides. The fort is still in reasonable condition and currently houses several local administrative departments of the Sri Lanka government in new buildings, which are located within the old structure.	
+					</td>
+					<td style="align-content: right;">
+						<img src="images\image.jpg" alt="Batticaloa fort" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Batticaloa_fort" target="_blank">https://en.wikipedia.org/wiki/Batticaloa_fort</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.timeout.com/sri-lanka/attractions/batticaloa-fort" target="_blank">https://www.timeout.com/sri-lanka/attractions/batticaloa-fort</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Pasikudah</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Pasikudah or Pasikuda (Tamil: பாசிக்குடா; Sinhala: පාසිකුඩා; (Pronounced Paasikkudah - historic Tamil translation "Green-Algae-Bay") is a coastal resort town located 35 kilometers northwest of Batticaloa, Batticaloa District, Sri Lanka. Historically a small Tamil hamlet alongside nearby Kalkudah, it used to be a popular tourist destination, however suffered huge devastation following the 2004 Indian Ocean tsunami and the Sri Lankan Civil War. Foreign travel to Pasikudah has recently increased due to growth in investment and development. It is home to the Pasikudah Mariamman temple. Pasikudah is easily accessible from the cities of Trincomalee and Batticaloa. The nearest airport to Pasikudah is Batticaloa Airport, which has scheduled flights operating from Colombo Bandaranaike International Airport.					</td>
+					<td style="align-content: right;">
+						<img src="images\Pasikudah_beach.jpg" alt="Pasikudah" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Pasikudah" target="_blank">https://en.wikipedia.org/wiki/Pasikudah</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Pasikudah" target="_blank">https://en.wikipedia.org/wiki/Pasikudah</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="trinco">Trincomalee District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Maritime and Naval History Museum, Trincomalee</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Maritime and Naval History Museum is a Maritime museum located at Trincomalee, Sri Lanka. It has been established near to Fort Fredrick where the Dutch first landed to the island in the 16th century.
+						<br><br>
+						The museum was declared open on 3 February 2013 by then Sri Lanka president Mahinda Rajapaksa coincide with the country's 65th Independence Day celebrations. The museum is used to display country's maritime history, marine biodiversity and information of the history of the local Naval affairs.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Maritime_and_Naval_History_Museum,_Trincomalee.jpg" alt="Maritime and Naval History Museum, Trincomalee" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Maritime_and_Naval_History_Museum,_Trincomalee" target="_blank">https://en.wikipedia.org/wiki/Maritime_History_Museum</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Maritime_and_Naval_History_Museum,_Trincomalee" target="_blank">https://en.wikipedia.org/wiki/Maritime_History_Museum</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Fort Fredrick</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Fort Fredrick (Tamil: திருகோணமலை கோட்டை, romanized: Tirukōṇamalai Kōṭṭai; Sinhala: ත්‍රිකුණාමලය බලකොටුව, romanized: Thrinkunamalaya Balakotuwa), also known as Trincomalee Fort or Fort of Triquillimale, is a fort built by the Portuguese at Trincomalee, Eastern Province, Sri Lanka, completed in 1624 CE, built on Swami Rock-Konamamalai from the debris of the world-famous ancient Hindu Koneswaram temple (Temple of a Thousand Pillars). The temple was destroyed by the Portuguese colonial Constantino de Sá de Noronha under Phillip III, occupier of the Jaffna kingdom and Malabar country on the island. On the Konamalai cape was also built a new village of Portuguese and Tamil people, 50 Portuguese soldiers and inside the fort, a church named after "Nossa Senhora de Guadalupe". The Fort of Triquillimale was dismantled and rebuilt by the Dutch in 1665, renamed Fort Fredrick.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\20171118_074437.jpg" alt="Fort Fredrick" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Fort_Fredrick" target="_blank">https://en.wikipedia.org/wiki/Fort_Fredrick</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://amazinglanka.com/wp/fort-fredrick/" target="_blank">https://amazinglanka.com/wp/fort-fredrick/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">Northern Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="jaffna">Jaffna District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Nallur Kandaswamy temple</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Nallur Kandaswamy Kovil (Tamil: நல்லூர் கந்தசுவாமி கோவில் Sinhala: නල්ලුරුව ස්කන්ධ කුමාර කෝවිල) is a significant Hindu temple, located in Nallur, Northern Province, Sri Lanka. The presiding deity is Lord Murugan in the form of the holy 'Vel' in the Sanctum, the primary shrine, and in other forms, namely, Shanmugar, Muthukumaraswami, Valli Kaanthar with consorts Valli and Deivayanai, and Thandayuthapani, sans consorts in secondary shrines in the temple.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Nallur_Kandasamy_front_entrance.jpg" alt="Nallur Kandaswamy temple" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple" target="_blank">https://en.wikipedia.org/wiki/Nallur_temple</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple" target="_blank">https://en.wikipedia.org/wiki/Nallur_temple</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="kili">Kilinochchi District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Iranamadu Tank</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Iranamadu Tank (Tamil: இரணைமடு குளம் Iraṇaimaṭu Kuḷam; Sinhala: ඉරණමඩු වැව) is an irrigation tank in northern Sri Lanka, approximately 3 mi (5 km) south east of Kilinochchi.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Iranamadu_Tank2.jpg" alt="Iranamadu Tank" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Iranamadu_Tank" target="_blank">https://en.wikipedia.org/wiki/Iranamadu_Tank</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Iranamadu_Tank" target="_blank">https://en.wikipedia.org/wiki/Iranamadu_Tank</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="mannar">Mannar District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Vankalai Sanctuary</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Vankalai Sanctuary is located in the northwest of Sri Lanka in the District of Mannar. This site covers an area of 4,839 ha.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\crested-terns.jpg" alt="Maritime and Naval History Museum, Trincomalee" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Vankalai_Sanctuary" target="_blank">https://en.wikipedia.org/wiki/Vankalai_Sanctuary</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://amazinglanka.com/wp/vankalai-sanctuary/" target="_blank">https://amazinglanka.com/wp/vankalai-sanctuary/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="mulla">Mullaitivu District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Pudukuduirippu Victory Monument</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Built in 2009, Pudukuduirippu Victory Monument had been dedicated to the War Heroes that fought in the Sri Lankan civil war. The monument depicts a soldier carrying its armour on one hand, as a symbol of courage and bravery, and the National Flag on the other, portraying independence and honour of the country. The four lions in each corner of the Monument of Victory demonstrates the War Heroes who were united together from all four directions of the country in pursuit of winning the battle.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Puthukkudiyiruppu-Victory-Monument.jpg" alt="Pudukuduirippu Victory Monument" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://www.discover.lk/destinations/mullaitivu/pudukuduirippu-victory-monument/" target="_blank">https://www.discover.lk/destinations/mullaitivu/</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.discover.lk/destinations/mullaitivu/pudukuduirippu-victory-monument/" target="_blank">https://www.discover.lk/destinations/mullaitivu/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="vavu">Vavuniya District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Madukanda Vihara</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The historic buddhist temple, Madukanda Vihara, is located in Madukanda Village, which was the birthplace of Nandimithra, a giant warrior of King Dutugemunu’s army. During the reign of King Kirthi Sri Meghavarna, the Sacred Tooth Relic of Lord Buddha was brought to Sri Lanka by Prince Dantha and Princess Hemamala. It is believed that the 4th resting point of the Tooth Relic on its journey, from Mullaitivu to Anuradhapura, was at Madukanda Village.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\2017-11-25-1024x576.jpg" alt="Madukanda Vihara" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://www.discover.lk/destinations/vavuniya/madukanda-vihara/" target="_blank">https://www.discover.lk/destinations/vavuniya/madukanda-vihara/</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://amazinglanka.com/wp/madukanda/" target="_blank">https://amazinglanka.com/wp/madukanda/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">Southern Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="galle">Galle District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Unawatuna</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Unawatuna is a coastal town in Galle district of Sri Lanka. Unawatuna is a major tourist attraction in Sri Lanka and known for its beach and corals. It is a suburb of Galle, about 5 kilometres (3.1 mi) southeast to the city center and approximately 108 kilometres (67 mi) south of Colombo. Unawatuna is situated at an elevation of 5 metres (16 ft) above the sea level. Despite significant development in the last decade it is still home to the endangered and endemic purple-faced langur, an usually shy monkey species that can only be found in Sri Lanka's forests.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Unawatuna.jpg" alt="Unawatuna" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Unawatuna" target="_blank">https://en.wikipedia.org/wiki/Unawatuna</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Unawatuna" target="_blank">https://en.wikipedia.org/wiki/Unawatuna</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Galle Fort</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Galle Fort (Sinhala: ගාලු කොටුව Galu Kotuwa; Tamil: காலிக் கோட்டை, romanized: Kālik Kōṭṭai), in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese, then extensively fortified by the Dutch during the 17th century from 1649 onwards. It is a historical, archaeological and architectural heritage monument, which even after more than 432 years maintains a polished appearance, due to extensive reconstruction work done by Archaeological Department of Sri Lanka.
+						<br><br>
+						The fort has a colourful history, and today has a multi-ethnic and multi-religious population. The Sri Lankan government and many Dutch people who still own some of the properties inside the fort are looking at making this one of the modern wonders of the world. The heritage value of the fort has been recognized by the UNESCO and the site has been inscribed as a cultural heritage UNESCO World Heritage Site under criteria iv, for its unique exposition of "an urban ensemble which illustrates the interaction of European architecture and South Asian traditions from the 16th to the 19th centuries."
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Galle_Fort-min.jpg" alt="Galle Fort" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Galle_Fort" target="_blank">https://en.wikipedia.org/wiki/Galle_Fort</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Galle_Fort" target="_blank">https://en.wikipedia.org/wiki/Galle_Fort</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="hamban">Hambantota District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Sithulpawwa Rajamaha Viharaya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Sithulpawwa Rajamaha Viharaya is an ancient Buddhist monastery located in Hambantota District, South Eastern Sri Lanka. Situated 18 km east of the pilgrimage town Katharagama, it is believed to have been built in the 2nd century B.C by king Kavantissa. Sithulpawwa Vihara can be reached by travelling 18 miles along the Tissamaharama-Yodhakandiya road towards the Yala National Park. The name Sithulpawwa is derived from the word "Chiththala Pabbatha", which means "the hill of the quiet mind".
+						<br><br>
+						This monastery was a place of worship for devotees as well as a center of Buddhist education for Buddhist monks. Paintings of the Anuradhapura era and the ruins of stone Buddha images, Bodhisattva images, Image Houses, Circular Relic Houses are spread throughout the monastery premises. The present chief incumbent of Sithulpawwa Rajamaha Vihara is Ven. Metaramba Hemarathana Nayake Thera.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Sithulpawwa.jpg" alt="Sithulpawwa Rajamaha Viharaya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Sithulpawwa_Rajamaha_Viharaya" target="_blank">https://en.wikipedia.org/wiki/Sithulpawwa</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Sithulpawwa_Rajamaha_Viharaya" target="_blank">https://en.wikipedia.org/wiki/Sithulpawwa</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Mirijjawila Botanical Garden</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Mirijjawila Botanical Garden is one of the five botanical gardens in Sri Lanka. The other botanical gardens are Peradeniya Botanical Garden, Hakgala Botanical Garden, Henarathgoda Botanical Garden and Seetawaka Botanical Garden.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\miri.jpg" alt="Mirijjawila Botanical Garden" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Mirijjawila_Botanical_Garden" target="_blank">https://en.wikipedia.org/wiki/Mirijjawila_Botanical_Garden</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.timeout.com/sri-lanka/things-to-do/mirijjawila-botanical-garden" target="_blank">https://www.timeout.com/sri-lanka/things-to-do/mirijjawila</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="matara">Matara District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Parevi Dupatha</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Parey Dewa (Rock in Water) or Paravi Dupatha temple is a relatively modern Buddhist temple on Pigeon Island (a small offshore island) in front of the city. It is reached by an elegant cable-stayed footbridge, which was erected in 2008 (replacing an earlier bridge, which was washed away in the 2004 tsunami). The temple is set in attractive gardens and houses numerous statues of Buddha and a replica of the alleged footprint found on Adam's Peak.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Islet_in_Matara.jpg" alt="Parevi Dupatha" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Matara,_Sri_Lanka" target="_blank">https://en.wikipedia.org/wiki/Matara,_Sri_Lanka</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Matara,_Sri_Lanka" target="_blank">https://en.wikipedia.org/wiki/Matara,_Sri_Lanka</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Old Nupe Market</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Old Nupe Market (Sinhala: නූපේ පැරණි වෙළඳ ගොඩනැගිල්ල) or the Old Dutch Market is a historic, European-built structure in Matara, Sri Lanka. It is located about 3.2 kilometres (2.0 mi) from Matara fort, at the junction of the Matara-Akuressa Highway (A24) and Matara Road (B535).
+					</td>
+					<td style="align-content: right;">
+						<img src="images\z_p-31-Nupe-00.jpg" alt="Old Nupe Market" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Old_Nupe_Market" target="_blank">https://en.wikipedia.org/wiki/Old_Nupe_Market</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.sundayobserver.lk/2016/10/24/travel/star-fort-and-old-dutch-trade-centre-nupe-market-magnificent-dutch-legacy-matara" target="_blank">https://www.sundayobserver.lk/2016/10/24/travel/star-fort</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">Western Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="colombo">Colombo District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Lotus Tower</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Lotus Tower (Sinhala: නෙලුම් කුලුන; Tamil: தாமரைக் கோபுரம்), also referred to as Colombo Lotus Tower, is a tower 350 m (1,150 ft) high, located in Colombo, Sri Lanka. It has been called a symbolic landmark of Sri Lanka. As of 2019, the tower is the tallest self-supported structure in South Asia; the second tallest structure in South Asia after the guy-wire-supported INS Kattabomman in India; the 11th tallest tower in Asia and the 19th tallest tower in the world. It was first proposed to be built in the suburb of Peliyagoda but later the Government of Sri Lanka decided to change the location. The lotus-shaped tower is used for communication, observation and other leisure facilities. Construction costed $104.3 million.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\40043076495_cd75ab0e67_o.jpg" alt="Lotus Tower" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Lotus_Tower" target="_blank">https://en.wikipedia.org/wiki/Lotus_Tower</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.thrillophilia.com/attractions/colombo-lotus-tower" target="_blank">https://www.thrillophilia.com/attractions/colombo-lotus-tower</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Sri Lanka Planetarium</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Sri Lanka Planetarium is a public planetarium located in Colombo, Sri Lanka. It is the first and only planetarium in the country and maintained as an institute under the Ministry of Science, Technology and Research.
+						<br><br>
+						The Planetarium was established on 1 February 1965 by the State Engineering Corporation as a special feature for the Ceylon industrial exhibition held in Colombo same year. The planetarium was designed by the chief engineer from the State Engineering Corporation of Ceylon, A. N. S. Kulasinghe, and was constructed by engineers from Germany. The building takes elements from the Liverpool Metropolitan Cathedral (Sir Frederick Gibberd - 1960) and the Cathedral of Brasília (Oscar Niemeyer - 1960). The building has a reinforced concrete floor and a pre-stressed concrete folded plate roof, which was pre-cast on-site. The building was funded by the German Democratic Republic as a gift to Ceylon.
+						<br><br>
+						With the aid of a universal projector stationed at the centre of this building, the artificial sky is created on the domed screen above a 570-seat auditorium. The universal projector is a product of Carl Zeiss AG East Germany.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Sri_lanka_planetarium.jpg" alt="Sri Lanka Planetarium" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Sri_Lanka_Planetarium" target="_blank">https://en.wikipedia.org/wiki/Sri_Lanka_Planetarium</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Sri_Lanka_Planetarium" target="_blank">https://en.wikipedia.org/wiki/Sri_Lanka_Planetarium</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="gampaha">Gampaha District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Kelaniya Raja Maha Viharaya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Kelaniya Raja Maha Vihara or Kelaniya Temple is a Buddhist temple in Kelaniya, Sri Lanka. It is located 11 km (6.8 mi) north-east of Colombo. The current chief incumbent (chief priest) is Venerable Professor Kollupitiye Mahinda Sangharakkhitha Thera.
+						<br><br>
+						The temple has often been associated with the rise and fall of Ceylon / Sri Lanka, with the popular saying that as the Kelaniya temple rose, Sri Lanka rose and as it fell, the country and its administration fell. It has thus had a deep association with the political powers of the country.
+						<br><br>
+						It is also infamous for Mapitigama Buddharakkitha, the chief conspirator of the 1959 assassination of Ceylon's fourth Prime Minister S. W. R. D. Bandaranaike. Buddharakkitha was the chief incumbent (chief priest) of the Kelaniya Raja Maha Vihara from 1947 to 1959.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Kelaniya_AS1.jpg" alt="Kelaniya Raja Maha Viharaya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Kelaniya_Raja_Maha_Vihara" target="_blank">https://en.wikipedia.org/wiki/Kelaniya_Raja_Maha_Vihara</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Kelaniya_Raja_Maha_Vihara" target="_blank">https://en.wikipedia.org/wiki/Kelaniya_Raja_Maha_Vihara</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Gampaha Botanical Garden</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Gampaha Botanical Garden, also known as Henarathgoda Botanical Garden, is situated in the suburb of Gampaha. It was established in 1876 by the British to conduct experiments on exotic economic plants such as Rubber, and explore plant wealth and development of economy in the colony. The first imported rubber tree to Sri Lanka was first planted in this garden and it was the first seedlings of Brazilian rubber tree ever planted in Asia. The garden consists of a large variety of plants and many of them are from every corner of the tropical world it is expanding over 43 acres (0.17 km2) and situated next to the Attanagalu Oya and surrounded by paddy fields, a man-made green environment and a secondary forest as well laid out with many interesting sections, eye-catching landscaping and many shrubs, bushes and trees. This garden is a famous destination for youngsters.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\gampaha-henarathgoda-botanical-garden-5c7a2-1.jpg" alt="Gampaha Botanical Garden" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Gampaha_Botanical_Garden" target="_blank">https://en.wikipedia.org/wiki/Gampaha_Botanical_Garden</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.ceylonexpeditions.com/gampaha-henarathgoda-botanical-garden-sri-lanka" target="_blank">https://www.ceylonexpeditions.com/gampaha-henarathgoda</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="kalutara">Kalutara District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Kalutara Bodhiya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Kalutara Bodhiya is a Bodhi tree (sacred fig) located in Kalutara, Western Province of Sri Lanka. Situated on the Galle Colombo main road, by the side of Kalu River just south to the Kalutara city, it is believed to be one of the 32 saplings of the Jaya Sri Maha Bodhi in Anuradhapura, Sri Lanka. A Buddhist temple Kalutara Viharaya and a modern Stupa, Kalutara Chaitya are located in close proximity to this sacred fig. One of the most venerated religious place in Sri Lanka, hundreds of Buddhists and foreign tourists visit this religious place daily.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Kalautara_Bodhiya_1-min.jpg" alt="Kalutara Bodhiya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Kalutara_Bodhiya" target="_blank">https://en.wikipedia.org/wiki/Kalutara_Bodhiya</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Kalutara_Bodhiya" target="_blank">https://en.wikipedia.org/wiki/Kalutara_Bodhiya</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Thudugala Ella</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Thudugala Ella (Sinhala: තුඩුගල ඇල්ල) waterfall is located in Thudugala village in Dodangoda Divisional Secretariat in Kalutara District of Western Province, Sri Lanka. Out of around 382 recorded waterfalls in Sri Lanka, the rank of this is 268th.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Another_view_of_the_waterfall.jpg" alt="Thudugala Ella" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Thudugala_Ella" target="_blank">https://en.wikipedia.org/wiki/Thudugala_Ella</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Thudugala_Ella" target="_blank">https://en.wikipedia.org/wiki/Thudugala_Ella</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">North Western Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="kuru">Kurunegala District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Yapahuwa</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Yapahuwa (Sinhalese language : යාපහුව) was one of the ephemeral capitals of medieval Sri Lanka. The citadel of Yapahuwa lying midway between Kurunagala and Anuradhapura was built around a huge granite rock rising abruptly almost a hundred meters above the surrounding lowlands.
+						<br><br>
+						In 1272, King Bhuvenakabahu transferred the capital from Polonnaruwa to Yapahuwa in the face of Dravidian invasions from South India, bringing the Sacred Tooth Relic with him. Following the death of King Bhuvenakabahu in 1284, the Pandyans of South India invaded Sri Lanka once again, and succeeded in capturing Sacred Tooth Relic. Following its capture, Yapahuwa was largely abandoned and inhabited by Buddhist monks and religious ascetics.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Yapahuwa_Staricase_2_cdm.jpg" alt="Yapahuwa " height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Yapahuwa" target="_blank">https://en.wikipedia.org/wiki/Yapahuwa</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Yapahuwa" target="_blank">https://en.wikipedia.org/wiki/Yapahuwa</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Ethagala</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Ethagala (Sinhala: ඇතාගල) (In English: the Elephant Rock) is one of seven rocks that overlook the town of Kurunegala, in Sri Lanka. The rock face reaches 316 metres (1,037 ft) over the town and in its shape resembles a crouching elephant, which explains the rock's name.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\ethagala.jpeg" alt="Ethagala" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Ethagala" target="_blank">https://en.wikipedia.org/wiki/Ethagala</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://heritageceylontours.com/index.php/tour/tourethagala/" target="_blank">https://heritageceylontours.com/index.php/tour/tourethagala/</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="putta">Puttalam District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Wilpattu National Park</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Wilpattu National Park (Willu-pattu, "Land of Lakes") is a national park in Sri Lanka. The unique feature of this park is the existence of "Willus" (natural lakes) – natural, sand-rimmed water basins or depressions that fill with rainwater. Located on the northwest coast lowland dry zone of Sri Lanka, the park is 30 km (19 mi) west of Anuradhapura and 26 km (16 mi) north of Puttalam (approximately 180 km (110 mi) north of Colombo). The park is 1,317 km2 (508 sq mi) (131,693 hectares) in area and ranges from 0–152 m (0–499 ft) above sea level. Nearly one hundred and six lakes (Willu) and tanks are found spread throughout Wilpattu. Wilpattu is the largest and one of the oldest national parks in Sri Lanka. Wilpattu is world-renowned for its leopard (Panthera pardus kotiya) population. A remote camera survey conducted in Wilpattu from July to October 2015 by the Wilderness and Wildlife Conservation Trust captured photographs of forty-nine individual leopards in the surveyed area, the core area density of which was between that of Yala National Park's Block I and Horton Plains National Park.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\WilpattuNationalPark-April2014_(3).jpg" alt="Wilpattu National Park" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Wilpattu_National_Park" target="_blank">https://en.wikipedia.org/wiki/Wilpattu_National_Park</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Wilpattu_National_Park" target="_blank">https://en.wikipedia.org/wiki/Wilpattu_National_Park</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+		
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Kalpitiya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Kalpitiya (Sinhala: කල්පිටිය, romanized: Kalpiṭiya, Tamil: கற்பிட்டி, romanized: Kaṟpiṭṭi) is a coastal town located in western region of, Puttalam District. The Kalpitiya peninsula consists of a total fourteen islands. It is developing as a tourist destination.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\SL_Kalpitiya_asv2020-01_img4_Fishery_harbour.jpg" alt="Kalpitiya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Kalpitiya" target="_blank">https://en.wikipedia.org/wiki/Kalpitiya</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.agoda.com/surfpoint-sri-lanka-kite-village/hotel/kalpitiya-lk.html?cid=-206" target="_blank">https://www.agoda.com/surfpoint-sri-lanka-kite-village</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">North Central Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="anura">Anuradhapura District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Jaya Sri Maha Bodhi</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Jaya Sri Maha Bodhi (Sinhala: ජය ශ්‍රී මහා බොධිය) is a sacred bo tree in the Mahamewna Gardens, Anuradhapura, Sri Lanka. It is the southern branch from the historical Sri Maha Bodhi at Buddha Gaya in India under which Buddha attained Enlightenment. It was planted in 288 BC, and is the oldest living human-planted tree in the world with a known planting date. Today it is one of the most sacred relics of the Buddhists in Sri Lanka and respected by Buddhists all over the world.
+						<br><br>
+						The other fig trees that surround the sacred tree protect it from storms and animals such as monkeys, bats, etc.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Photograph_of_Jaya_Sri_Maha_Bodhi_Anuradhapura_Sri_Lanka.jpg" alt="Jaya Sri Maha Bodhi" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Jaya_Sri_Maha_Bodhi" target="_blank">https://en.wikipedia.org/wiki/Jaya_Sri_Maha_Bodhi</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Jaya_Sri_Maha_Bodhi" target="_blank">https://en.wikipedia.org/wiki/Jaya_Sri_Maha_Bodhi</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Anuradhapura Archaeological Museum</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Anuradhapura Archaeological Museum (Also known as Puravidu Bhavana) is one of the archaeological museums of Sri Lanka. It is situated in the old kachcheri building, between the Brazon palace and Ruwanwelisaya. The museum was established in 1947 under the prime effort of Dr. Senarath Paranavithana. Anuradhapura Archaeological Museum is one of the oldest museum in the Cultural Triangle area and it has been proposed to name as the National Museum of the Department of Archaeology of Sri Lanka.
+						<br><br>
+						The museum is used to exhibit antiquities found from various regions of Sri Lanka. Such as Buddha statues, inscriptions, drawings, puppets, coins, jewelleries, Beads and other miscellaneous things. Among these antiquities there is a model of the Thuparamaya Vatadage and a relic chamber found at Mihintale Kantaka Chetiya Dagoba.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\anu-museum.jpg" alt="Anuradhapura Archaeological Museum" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Anuradhapura_Museum" target="_blank">https://en.wikipedia.org/wiki/Anuradhapura_Museum</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://visitanuradhapura.com/listing/archaeological-museum-puravidu-bhavana/" target="_blank">https://visitanuradhapura.com/listing/archaeological-museum</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="polon">Polonnaruwa District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Giritale Tank</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Giritale tank (Sinhala: ගිරිතලේ වැව) is a reservoir in Giritale and Minneriya. It was built by King Agbo II (608-618). It is believed that the tank was renovated by King Parakramabahu, the Great (1153–1186). Later, it was subjected to renovation in 1905, 1942 and 1952 during colonial era.
+						<br><br>
+						Giritale Tank was considered as the deepest tank in Sri Lanka during the rule of medieval capital Polonnaruwa.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Giritale_tank-min.jpg" alt="Giritale Tank" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Giritale_Tank" target="_blank">https://en.wikipedia.org/wiki/Giritale_Tank</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Giritale_Tank" target="_blank">https://en.wikipedia.org/wiki/Giritale_Tank</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+		
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Gal Vihara</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Gal Vihara (Sinhala: ගල් විහාර), and originally as the Uttararama (Sinhala: උත්තරාම), is a rock temple of the Buddha situated in the ancient city of Polonnaruwa in North Central Province, Sri Lanka. It was fashioned in the 12th century by Parakramabahu I. The central feature of the temple is four rock relief statues of the Buddha, which have been carved into the face of a large granitic (granite gneiss) rock. The images consist of a large seated figure, another smaller seated figure inside an artificial cavern, a standing figure and a reclining figure. These are considered to be some of the best examples of ancient Sinhalese sculpting and carving arts, and have made the Gal Vihara the most visited monument at Polonnaruwa.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\gal vihara.jpg" alt="Gal Vihara" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Gal_Vihara" target="_blank">https://en.wikipedia.org/wiki/Gal_Vihara</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.timeout.com/sri-lanka/attractions/gal-viharaya" target="_blank">https://www.timeout.com/sri-lanka/attractions/gal-viharaya</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">Uva Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="badulla">Badulla District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Dunhinda Falls</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Dunhinda Falls is a waterfall located about 5 kilometres (3.1 mi) from Badulla in the lower central hills of Sri Lanka. The waterfalls are purported to be one of the country's most beautiful waterfalls.
+						<br><br>
+						The waterfall, which is 64 metres (210 ft) high, gets its name from the smoky dew drops spray, (Dun in sinhala means mist or smoke) which surrounds the area at the foot of the waterfall. It's also known as bridal fall, as the shape of the water falling is similar to a bridal veil. Also, there are some myths and legends associated with the fall. The fall is created by the Badulu Oya which flows through Badulla.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Dunhinda.jpg" alt="Dunhinda Falls" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Dunhinda_Falls" target="_blank">https://en.wikipedia.org/wiki/Dunhinda_Falls</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Dunhinda_Falls" target="_blank">https://en.wikipedia.org/wiki/Dunhinda_Falls</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Bogoda Wooden Bridge</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Bogoda Wooden Bridge was built in the 16th century during the Dambadeniya era. This is said to be the oldest surviving wooden bridge in Sri Lanka. The bridge is situated at 7 kilometres (4.3 mi) west of Badulla. All parts of this bridge were constructed from wood, including the use of wooden nails as fixing material. The roof tiles show the influence of Kingdom of Kandy. The bridge was built across the Gallanda Oya, which linked Badulla and Kandy on an ancient route.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Bogoda_wooden_bridge_1.jpg" alt="Bogoda Wooden Bridge" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Bogoda_Wooden_Bridge" target="_blank">https://en.wikipedia.org/wiki/Bogoda_Wooden_Bridge</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Bogoda_Wooden_Bridge" target="_blank">https://en.wikipedia.org/wiki/Bogoda_Wooden_Bridge</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="monara">Monaragala District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Yudaganawa Chaitya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						The Chaitya at Yudaganawa has a circumference of 317 m (1,040 ft) and was initially thought to be a Kota Vehera - a large stupa built half way with a smaller stupa built on top of that. Recent archaeological excavations however have proved that this was not a Kota Vehera but at one time was a complete stupa.
+						<br><br>
+						According to the historic chronicle, Rajaveliya, this is the location where two brothers, Prince Dutugemunu and Prince Saddatissa had a battle over the throne of the kingdom. Prince Saddatissa lost the battle and fled to take refuge in Dematamal viharaya at Okkampitiya. The Queen Mother, Viharamahadevi,was saddened by the animosity between her two sons, pleaded with them to make amends. As a result, the two brothers made peace with each other and to mark this a colossal stupa was erected on the battlefield where they had fought. Some historians believe that it was the site of an already existing chaitya, which was then reconstructed and named Yudagana Chaitya.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Yudaganawa-min.jpg" alt="Yudaganawa Chaitya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Yudaganawa" target="_blank">https://en.wikipedia.org/wiki/Yudaganawa</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Yudaganawa" target="_blank">https://en.wikipedia.org/wiki/Yudaganawa</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+		
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Dematamal Viharaya</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Dematamal Viharaya is a Buddhist temple in Okkampitiya village, Monaragala district, Sri Lanka. The Stupa of Dematamal Viharaya is considered as one of the oldest Stupas in Sri Lanka built in the 2nd Century BC.
+						<br><br>
+						According to folklore, it is the place which provided safety to Prince Saddhatissa, who was attempting to flee after losing the fight with his elder brother, Prince Dutugamunu.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\01-stupa-of-dematamal-viharaya-in-southern-sri-lanka-600_orig.jpg" alt="Dematamal Viharaya" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Dematamal_Viharaya" target="_blank">https://en.wikipedia.org/wiki/Dematamal_Viharaya</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.lanka-excursions-holidays.com/dematamal-viharaya.html" target="_blank">https://www.lanka-excursions-holidays.com/dematamal-viharaya.html</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<h2 class="pro">Sabaragamuwa Province</h2>
+		<br><br>
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="kegalle">Kegalle District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Pinnawala Elephant Orphanage</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Pinnawala Elephant Orphanage (Sinhala: පින්නවල අලි අනාථාගාරය), is an orphanage, nursery and captive breeding ground for wild Asian elephants located at Pinnawala village, 13 km (8.1 mi) northeast of Kegalle town in Sabaragamuwa Province of Sri Lanka. Pinnawala has the largest herd of captive elephants in the world. In 2011, there were 96 elephants, including 43 males and 68 females from 3 generations, living in Pinnawala.
+						<br><br>
+						The orphanage was founded to care and protect the many orphaned unweaned wild elephants found wandering in and near the forests of Sri Lanka. It was established in 1975 by the Sri Lanka Department of Wildlife Conservation (DWC).
+						<br><br>
+						On 31 August 2021, a 25 year old elephant named Surangi gave birth to twin male baby elephants at the orphanage. It also marked the first instance of the birth of twin elephants in Sri Lanka after a gap of 80 years since 1941.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\Pinnawala_01.jpg" alt="Pinnawala Elephant Orphanage" height="80%" width="80%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Pinnawala_Elephant_Orphanage" target="_blank">https://en.wikipedia.org/wiki/Pinnawala</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Pinnawala_Elephant_Orphanage" target="_blank">https://en.wikipedia.org/wiki/Pinnawala</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Asupini Ella</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Asupini Ella (waterfall) also called 'Asupini Falls' is a 30 metres (98 ft) waterfall that can be seen from the historic town of Aranayake. According to ancient tales, it was named after the story about a King who had many queens. On his return from war, he assured them that he would give them a sign from the hills about the fate of the war. He said, “If his soldiers waved a white flag over the hills, it would mean he was defeated and killed in action. But, if he waved his own flag bearing his crest, that he was victorious". The King decided to play a joke on his wives, who were waiting with their horses near the waterfall to see the visual message, by waving a white flag. His wives were so upset that they all committed suicide by jumping over the falls which inspired the name Ahupini, which is derived from 'Aswaya' (Horse) and 'Pini' or 'Panina' (Jump) which combined means "the horses jumped over the falls".
+					</td>
+					<td style="align-content: right;">
+						<img src="images\is-a-waterfall-which.jpg" alt="Asupini Ella" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Kegalle#Asupini_Ella" target="_blank">https://en.wikipedia.org/wiki/Kegalle#Asupini_Ella</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://no.tripadvisor.com/LocationPhotoDirectLink-g293961-i458139105-Sri_Lanka.html" target="_blank">https://no.tripadvisor.com/LocationPhotoDirectLink</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br><br><br><br>
+
+		<dt>
+			<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+			<center><h3 class="dis" id="ratna">Ratnapura District</h3></center>
+		</dt>
+		<br>
+		<dd>
+			<table class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Sinharaja Forest Reserve</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Sinharaja Forest Reserve is a forest reserve and a biodiversity hotspot in Sri Lanka. It is of international significance and has been designated a Biosphere Reserve and World Heritage Site by UNESCO.
+						<br><br>
+						According to International Union for Conservation of Nature (IUCN), Sinharaja is the country's last viable area of primary tropical rainforest. More than 60% of the trees are endemic and many of them are considered rare. 50% of Sri Lankan's endemics species of animals (especially butterfly, amphibians, birds, snakes and fish species). It is home to 95% endemic birds.
+						<br><br>
+						The hilly virgin rainforest, part of the Sri Lanka lowland rain forests ecoregion, was saved from the worst of commercial logging by its inaccessibility, and was designated a World Biosphere Reserve in 1978 and a World Heritage Site in 1988.
+					</td>
+					<td style="align-content: right;">
+						<img src="images\20160128_Sri_Lanka_4132_Sinharaja_Forest_Preserve_sRGB_(25674474901).jpg" alt="Sinharaja Forest Reserve" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve" target="_blank">https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve" target="_blank">https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br><br>
+		
+		<dd>
+			<table  class="tbb" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="2">
+						<h4>➣  <u>Batadombalena</u> - </h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 40%;">
+						Batadombalena is an archaeological site with evidence of habitation from 8,000 years BCE, Balangoda Man, located 85 km (52.8 mi) from Colombo in Sri Lanka, a two-hour drive from Colombo.
+						<br><br>
+						The Batadombalena archaeological site contains evidence of habitation from as early as 8,000 years BCE and is one of the sites whose discoveries support the "Out of Africa" hypothesis,[1] according to Professor Paul Mellars, a Cambridge University archaeologist. Among the evidence of Balangoda Man he unearthed at the site were stone tools that are interpreted as arrow - or spearheads and carefully shaped and perforated beads made from ostrich eggshell fragments. One particular piece of an ostrich eggshell, incised with a distinctive criss-cross motif, has also been discovered.
+						<br><br>
+						Batadombalena Cave has a size of roughly 50 ft × 60 ft × 80 ft (15 m × 18 m × 24 m).
+					</td>
+					<td style="align-content: right;">
+						<img src="images\z_p36-Balangoda-1.jpg" alt="Batadombalena" height="100%" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 17px;">
+						For more details, visit <br><a href="https://en.wikipedia.org/wiki/Batadombalena" target="_blank">https://en.wikipedia.org/wiki/Batadombalena</a>
+					</td>
+					<td  style="font-size: 17px;">
+						The image was taken from, <br><a href="https://www.sundayobserver.lk/2017/04/09/travel/batadombalena-cave-%E2%80%98balangoda-man%E2%80%99s-home" target="_blank">https://www.sundayobserver.lk/2017/04/09/travel/batadombalena</a>
+					</td>
+				</tr>
+			</table>
+		</dd>
+
+		<br>
+		<hr style="color: lightskyblue; width: 70%; height: 7px; align-content: center;background-color: lightskyblue; border-style: none;">
+		<br>
+		
+
+	</dl>
+
+	</div>
+
+
+
+	
+</div>
+
+</body>
+</html>

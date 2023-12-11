@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images\sl.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+	<title>To-Do List</title>
+
+	<style>
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		.sbox {
+			border-radius: 15px;
+			top: 355px;
+			left: 575px;
+			height: 50px;
+			width: 100%;
+			border: none;
+		}
+
+		.btn {
+			background-color: lightseagreen;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 15px;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 22px;
+ 			letter-spacing: 8px;
+			font-size: 45px;
+			color: lightblue;
+			margin-bottom: 10px;
+			font-family: 'Kaushan Script', cursive;
+		}
+
+		.list {
+			color: blanchedalmond;
+			font-size: 25px;
+		}
+
+		body {
+			background-image: url(backgr2.jpg);
+			background-attachment: fixed;
+		}
+
+		.nav {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: none;
+			font-size: 25px;
+		}
+
+		.nav li{
+			display: inline-block;
+			float: right;
+			background-color: lightseagreen;
+		}
+
+		.nav li a{
+			display: block;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			color: rgb(0, 0, 0);
+		}
+
+		.nav li:hover{
+			background-color: skyblue;
+		}
+
+		.nav li a:hover {
+			color: rgb(4, 0, 255);
+		}
+
+		.container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        h1 {
+        	padding-top: 40px;
+        }
+
+		.div1 {
+			float: left;
+			width: 50%;
+			height:400px;
+		}
+
+		.div2 {
+			background-color: none;
+			color: white;
+			float: right;
+			width: 50%;
+			height: 400px;
+			font-size: 25px;
+		}
+
+		.d1 {
+			float: right;
+		}
+
+		.d2 {
+			float: left;
+		}
+
+		.tab3 {
+			border-spacing: 15px;
+			margin-left: 40px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<ul class="nav">
+		<li>
+			<a href="Home.html">Home</a>
+		</li>
+		<li>
+			<a href="Tourist Destinations.html">Tourist Destinations</a>
+		</li>
+		<li>
+			<a href=" To-Do List.html">To-Do List</a>
+		</li>
+		<li>
+			<a href="About.html">About</a>
+		</li>
+		<li>
+			<a href="Contact.html">Contact</a>
+		</li>
+	</ul>
+
+	<div id="app" class="container">
+        <h1>To-Do List</h1>
+		<br>
+		<hr style="color: green;">
+			<p style="color: whitesmoke; text-align: center; font-size: 20px;">
+				Simply type anything you want to add to your To-Do List and click the "ADD TO LIST" button
+			</p>
+		<hr style="color: green;">
+		<br><br>
+
+        <div v-if="!editing">
+            <input type="text" v-model="todo" class="sbox" placeholder="Type Here To Enter..."> <br><br>
+            <input type="submit" value="ADD TO LIST" @click="store" class="btn"><br><br>
+        </div>
+        <div v-else>
+            <input type="text" v-model="todo" class="sbox" placeholder="Type Here To Update...">
+            <input type="submit" value="UPDATE LIST" @click="update" class="btn">
+        </div>
+
+        <ol>
+            <li v-for="(todo, index) in todos" class="list">
+                {{ todo }}
+                <button @click="edit(index, todo)" class="btn">EDIT ITEM</button>
+                <button @click="remove(index)" class="btn">DELETE ITEM</button>
+            </li>
+        </ol>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            
+            data: {
+                editing: false,
+                todo: '',
+                todos: [],
+                selected: null
+            },
+            
+            methods: {
+                store() {
+                    this.todos.push(this.todo)
+                    this.todo = ''
+                },
+
+                remove(index) {
+                    this.todos.splice(index, 1)
+                },
+
+                update() {
+                    this.todos.splice(this.selected, 1, this.todo)
+                    this.todo = ''
+                    this.editing = false
+                },
+
+                edit(index, todo) {
+                    this.editing = true
+                    this.todo = todo
+                    this.selected = index
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
